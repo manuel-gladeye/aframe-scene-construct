@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, World! - A-Frame</title>
+    <meta name="description" content="Hello, World! - A-Frame">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="monolithSceneObj" src="assets/monolith-scene.obj"></a-asset-item>
+        <a-asset-item id="monolithSceneMtl" src="assets/monolith-scene.mtl"></a-asset-item>
+      </a-assets>
+      <a-entity obj-model="obj: #monolithSceneObj; mtl: #monolithSceneMtl" position="0 -1 0"></a-entity>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
